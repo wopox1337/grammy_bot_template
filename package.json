@@ -1,12 +1,17 @@
 {
-  "scripts": {
-    "dev": "tsx watch ./bot.ts"
-  },
-  "devDependencies": {
-    "tsx": "^4.6.2",
-    "typescript": "^5.3.3"
-  },
-  "dependencies": {
-    "grammy": "^1.19.2"
-  }
+    "scripts": {
+        "dev": "tsx watch --env-file=.env ./src/bot.ts",
+        "start": "tsx ./src/bot.ts",
+        "lint": "biome format ./src --write "
+    },
+    "devDependencies": {
+        "@biomejs/biome": "1.4.1",
+        "typescript": "^5.3.3"
+    },
+    "dependencies": {
+        "@types/node": "^20.10.5",
+        "axios": "^1.6.2",
+        "grammy": "^1.19.2",
+        "tsx": "^4.6.2"
+    }
 }
