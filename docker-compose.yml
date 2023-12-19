@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  bot:
+    build: .
+    # environment:
+    #   - TELEGRAM_API_KEY=<set_your_key> # use if u need it
+    env_file:
+      - .env
